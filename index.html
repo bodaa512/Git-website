@@ -1,383 +1,270 @@
 <!DOCTYPE html>
+<!-- Coding by CodingNepal - youtube.com/@codingnepal -->
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Gym</title>
-    <script src="https://kit.fontawesome.com/e1ed52ce3b.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Website | CodingNepal</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+    <!-- Header / Navbar -->
     <header>
-        <div class="logo-container">
-            <a class="logo" href="#">
-                <img src="./images/fitness_logo.png" alt="Fitness Logo">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">
+                <h2 class="logo-text">☕ Coffee</h2>
             </a>
-            <nav>
-                <div class="menu-container">
-                    <div class="menu" id="menu-btn" onclick="toggleMenu()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="cancel" id="close-menu" onclick="toggleMenu()">X</div>
-                </div>
-                <ul id="nav-items">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Trainers</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Coming Soon</a></li>
-                    <li><a href="#" class="content">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="icons">
-            <ul>
-                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
             </ul>
-        </div>
-
-        <span class="line"></span>
-        <div class="h-title">
-
-            <h1 class="text1">XETREME FITNESS</h1>
-            <p class="strong">BE STRONG</p>
-            <p class="gym">Best GYM & Fitness Center Build Your Health.</p>
-            <button>Join Us Now</button>
-        </div>
-    </section>
-    <div class="features">
-        <!-- title -->
-        <div class="title">
-            <p class="title-p">WHY CHOOSE US</p>
-            <h1 class="title-h">BUILD YOUR BEST BODY</h1>
-        </div>
-        <!-- boxes -->
-        <div class="box-container">
-            <div class="box">
-                <div class="photo1">
-                    <img src="images/choose_us_1.png" alt="icon1">
-                </div>
-
-                <div class="box-title">FLEX MUSCLE</div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sunt molestiae inventore, quidem
-                    ipsa rem?</p>
-            </div>
-            <div class="box">
-                <div class="photo1">
-                    <img src="images/choose_us_3.png" alt="icon1">
-                </div>
-                <div class="box-title">ABDOMINAL SESSIONS</div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sunt molestiae inventore, quidem
-                    ipsa rem?</p>
-            </div>
-            <div class="box">
-                <div class="photo1">
-                    <img src="images/choose_us_4.png" alt="icon1">
-                </div>
-                <div class="box-title">WEIGHT LIFTING</div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sunt molestiae inventore, quidem
-                    ipsa rem?</p>
-            </div>
-            <div class="box">
-                <div class="photo1">
-                    <img src="images/choose_us_2.png" alt="icon1">
-                </div>
-                <div class="box-title">POWERFUL FITAMINS</div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam sunt molestiae inventore, quidem
-                    ipsa rem?</p>
-            </div>
-        </div>
-    </div>
-    <section class="join-us">
-        <div class="contact">
-            <h3 class="about-us">ABOUT US</h3>
-            <h1 class="title2">WELCOME TO THE <br>XTREME FITNESS</h1>
-            <P class="description">But pain in reproaches in pleasure wants to be a cillum pain, flees from nothing,
-                gives birth to them, they are blinded by desire, they do not procreate, they are in the cular bird,
-                offices, abandon, softens the soul, labors.</P>
-            <div class="stats">
-                <div class="stat">
-                    <span class="number">600K+</span>
-                    <p>WORKING HOURS</p>
-                </div>
-                <div class="stat">
-                    <span class="number">790K+</span>
-                    <p>SUCCESS PROGRAM</p>
-                </div>
-                <div class="stat">
-                    <span class="number">2560K+</span>
-                    <p>HAPPY CLIENTS</p>
-                </div>
-                <div class="stat">
-                    <span class="number">830K+</span>
-                    <p>PERFECT BODIES</p>
-                </div>
-            </div>
-            <Button class="read-more">
-                read more <span class="play-icon">&#9654</span>
-
-            </Button>
-        </div>
-    </section>
-    <section class="services">
-        <div class="services-header">
-            <h2>Our Services</h2>
-            <h3>Solutions for Moving Better & Feeling Healthier</h3>
-        </div>
-        <div class="service-container">
-            <div class="service-box">
-                <img src="images/personal.jpg" alt="Personal Training">
-                <div class="service-content">
-                    <h4>Personal Training</h4>
-                    <p>Whether pleasure is despised or hated or fled, great pains follow them.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <img src="images/yoga.jpg" alt="Yoga Lesson">
-                <div class="service-content">
-                    <h4>Yoga Lesson</h4>
-                    <p>Ruinous pleasure is despised or hated or fled, and great pains follow them.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <img src="images/boxing.jpg" alt="Boxing & Martial Arts">
-                <div class="service-content">
-                    <h4>Boxing & Martial Arts</h4>
-                    <p>There is no pleasure, he despises or hates or flees, and great pains follow them.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <img src="images/online.jpg" alt="Online Coaching">
-                <div class="service-content">
-                    <h4>Online Coaching</h4>
-                    <p>My pleasure is despised or hated or fled, and great pains follow them.</p>
-                    <a href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-        <div style="display: flex; justify-content: center;">
-            <span class="button2">join-us</span>
-        </div>
-    </section>
-    <section class="pricing">
-        <div class="title">
-            <p class="title-p">PRICING TABLES</p>
-            <h1 class="title-h">CHOOSE YOUR PRICING PLAN</h1>
-        </div>
-        <div class="box-container">
-            <div class="box-price">
-                <img style="display: block; z-index: 0;" src="images/pricing_tables_1.png" alt="STANDARD GYM">
-                <div class="price-monthly">
-                    <h2>40$</h2>
-                    <p style="color: white;">Monthly</p>
-                </div>
-                <h1>STANDARD GYM</h1>
-                <div class="p-container">
-                    <p>Unlimited club access</p>
-                    <p>Group attendance</p>
-                    <p>Gym visits</p>
-                    <p>Visits to the bath complex</p>
-                    <p>Gym, fight club</p>
-                </div>
-            </div>
-            <div class="box-price">
-                <img style="display: block; z-index: 0;" src="images/pricing_tables_2.png" alt="BASIC GYM">
-                <div class="price-monthly">
-                    <h2>50$</h2>
-                    <p style="color: white;">Monthly</p>
-                </div>
-                <h1>BASIC GYM</h1>
-                <div class="p-container">
-                    <p>Unlimited club access</p>
-                    <p>Group attendance</p>
-                    <p>Gym visits</p>
-                    <p>Visits to the bath complex</p>
-                    <p>Gym, fight club</p>
-                </div>
-            </div>
-            <div class="box-price">
-                <img style="display: block; z-index: 0;" src="images/pricing_tables_3.png" alt="PREMIUM GYM">
-                <div class="price-monthly">
-                    <h2>60$</h2>
-                    <p style="color: white;">Monthly</p>
-                </div>
-                <h1>PREMIUM GYM</h1>
-                <div class="p-container">
-                    <p>Unlimited club access</p>
-                    <p>Group attendance</p>
-                    <p>Gym visits</p>
-                    <p>Visits to the bath complex</p>
-                    <p>Gym, fight club</p>
-                </div>
-            </div>
-        </div>
-
-        </div>
-    </section>
-
-    <section class="team">
-        <div class="text-team">
-            <p class="text-p">TEAM MEMBERS</p>
-            <h1 class="text-h">TEAM OF EXPERT COACHES</h1>
-        </div>
-
-
-        <div class="team-container">
-            <div class="coach">
-                <img src="images/team_member_1.png" alt="Marvin Joiner">
-                <h3>Marvin Joiner</h3>
-                <p>Crossfit Coach</p>
-                <div class="social-icons">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="coach">
-                <img src="images/team_member_2.png" alt="Patricia Woodrum">
-                <h3>Patricia Woodrum</h3>
-                <p>Cardio & Conditioning</p>
-                <div class="social-icons">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="coach">
-                <img src="images/team_member_3.png" alt="Hannaz Stone">
-                <h3>Hannaz Stone</h3>
-                <p>Fitness Coach</p>
-                <div class="social-icons">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section class="contact-us">
-        <div class="container-us">
-            <div class="form-section">
-                <h2>CONTACT US</h2>
-                <h3>SEND US A MESSAGE & JOIN OUR TEAM</h3>
-                <form action="#" method="POST">
-                    <div class="">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="tel" name="phone" placeholder="Phone" required>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero section -->
+        <section class="hero-section">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Best Coffee</h2>
+                    <h3 class="subtitle">Make your day great with our special coffee!</h3>
+                    <p class="description">Welcome to our coffee paradise, where every bean tells a story and every cup
+                        sparks joy.</p>
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Order Now</a>
+                        <a href="#contact" class="button contact-us">Contact Us</a>
                     </div>
-                    <div class=""><input type="email" name="email" placeholder="Email" required>
-                        <input type="text" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class=""><textarea name="message" placeholder="Message" required></textarea>
-                    </div>
-
-                </form>
-                <button type="submit">Send now</button>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/coffee-hero-section.png" alt="Coffee" class="hero-image" />
+                </div>
             </div>
-        </div>
-
-    </section>
-    <footer>
-        <div class="logo-footer">
-            <a class="logo" href="#">
-                <img src="./images/fitness_logo.png" alt="Fitness Logo">
-            </a>
-            <p>Fuisruam est aui dolorem ipsum ruia dolor sit amet...</p>
-            <div class="f-icons">
-                <ul>
-                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-
+        </section>
+        <!-- About section -->
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/about-image.jpg" alt="About" class="about-image" />
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="text">At Coffee House in Berndorf, Germany, we pride ourselves on being a go-to
+                        destination for coffee lovers and conversation seekers alike. We're dedicated to providing an
+                        exceptional coffee experience in a cozy and inviting atmosphere, where guests can relax, unwind,
+                        and enjoy their time in comfort.</p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Menu section -->
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/hot-beverages.png" alt="Hot Beverages" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Hot Beverages</h3>
+                            <p class="text">Wide range of Steaming hot coffee to make you fresh and light.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/cold-beverages.png" alt="Cold Beverages" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Cold Beverages</h3>
+                            <p class="text">Creamy and frothy cold coffee to make you cool.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/refreshment.png" alt="Refreshment" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Refreshment</h3>
+                            <p class="text">Fruit and icy refreshing drink to make feel refresh.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/special-combo.png" alt="Special Combos" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Special Combos</h3>
+                            <p class="text">Your favorite eating and drinking combations.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/desserts.png" alt="Dessert" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Dessert</h3>
+                            <p class="text">Satiate your palate and take you on a culinary treat.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/burger-frenchfries.png" alt="burger & French Fries" class="menu-image" />
+                        <div class="menu-details">
+                            <h3 class="name">Burger & French Fries</h3>
+                            <p class="text">Quick bites to satisfy your small size hunger.</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
-        </div>
-        <div class="f-2">
-            <h2>OPENING HOURS</h2>
-            <div class="time">Monday – Saturday
+        </section>
+        <!-- Testimonials section -->
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-1.jpg" alt="User" class="user-image" />
+                                <h3 class="name">Sarah Johnson</h3>
+                                <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order
+                                    again!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-2.jpg" alt="User" class="user-image" />
+                                <h3 class="name">James Wilson</h3>
+                                <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping
+                                    too!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-3.jpg" alt="User" class="user-image" />
+                                <h3 class="name">Michael Brown</h3>
+                                <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-4.jpg" alt="User" class="user-image" />
+                                <h3 class="name">Emily Harris</h3>
+                                <i class="feedback">"Excellent quality! Fresh beans and quick delivery. Highly
+                                    recommend."</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-5.jpg" alt="User" class="user-image" />
+                                <h3 class="name">Anthony Thompson</h3>
+                                <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived promptly."</i>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
             </div>
-            <span class="timer">12.00 – 14.45</span>
-            <div class="time">Monday – Saturday
+        </section>
+        <!-- Gallery section -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="images/gallery-1.jpg" alt="Gallery Image" class="gallery-image" />
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-2.jpg" alt="Gallery Image" class="gallery-image" />
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-3.jpg" alt="Gallery Image" class="gallery-image" />
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-4.jpg" alt="Gallery Image" class="gallery-image" />
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-5.jpg" alt="Gallery Image" class="gallery-image" />
+                    </li>
+                    <li class="gallery-item">
+                        <img src="images/gallery-6.jpg" alt="Gallery Image" class="gallery-image" />
+                    </li>
+                </ul>
             </div>
-            <span class="timer">12.00 – 14.45</span>
-            <div class="time">Monday – Saturday
+        </section>
+        <!-- Contact section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>info@coffeeshopwebsite.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(123) 456-78909</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Saturday: 10:00 AM - 3:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular fa-clock"></i>
+                        <p>Sunday: Closed</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>www.codingnepalweb.com</p>
+                    </li>
+                </ul>
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your name" class="form-input" required />
+                    <input type="email" placeholder="Your email" class="form-input" required />
+                    <textarea placeholder="Your message" class="form-input" required></textarea>
+                    <button type="submit" class="button submit-button">Submit</button>
+                </form>
             </div>
-            <span class="timer">12.00 – 14.45</span>
-        </div>
-
-
-        <div class="f-3">
-            <h2>QUICK LINKS</h2>
-            <div class="f-items">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Trainers</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Contact</a></li>
+        </section>
+        <!-- Footer section -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2024 Coffee Shop</p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a>
+                    <span class="separator">•</span>
+                    <a href="#" class="policy-link">Refund policy</a>
+                </p>
             </div>
-        </div>
-        <div class="f-4">
-            <h2>CONTACT US</h2>
-            <div class="f-address">Address:
-
-            </div>
-            <span class="f-location">121 King Street Melbourne, 3000, Australia</span>
-            <div class="f-address">Email:</div>
-            <span class="f-location">Info@xtremefitness.com</span>
-            <div class="f-address">Phone:</div>
-            <span class="f-location">+61 3 8376 6284
-            </span>
-        </div>
-    </footer>
-
-    <div class="copy-write">
-        <div class="f-line"></div>
-        <div class="">Copyright 2022 xtremefitness.com All Rights Reserved.</div>
-    </div>
-
-
-</body>
-
-</html>
-
-<script>
-    function toggleMenu() {
-        var navItems = document.getElementById("nav-items");
-        var menuBtn = document.getElementById("menu-btn");
-        var closeBtn = document.getElementById("close-menu");
-
-        navItems.classList.toggle("show");
-        menuBtn.classList.toggle("hide");
-        closeBtn.classList.toggle("visible");
-    }
-</script>
+        </footer>
+    </main>
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
 </body>
 
 </html>
